@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class eHealth : MonoBehaviour 
 {
+	//How many hits an enemy can take
 	[SerializeField]
 	private int health;
 	[SerializeField]
+	//UI renderer control
 	private Renderer[] healthBar;
 
 	// Use this for initialization
 	void Start () 
 	{
+		//Puts renderers in Array
 		healthBar = GetComponentsInChildren<Renderer>();
 		health = 3;
 	}
 
 	void Update()
 	{
+		//Debug health points
 		if(Input.GetKeyUp(KeyCode.UpArrow))
 		{
 			health++;
@@ -31,6 +35,7 @@ public class eHealth : MonoBehaviour
 	}
 	void barShow()
 	{
+		//Switches images based on health
 		switch (health) 
 		{
 		case 1:

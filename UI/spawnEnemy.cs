@@ -21,7 +21,7 @@ public class spawnEnemy : MonoBehaviour
 		}
 		if (Input.GetKeyUp (KeyCode.Alpha3)) 
 		{
-			Instantiate (e, new Vector3(spawn[2].transform.position.x,spawn[2].transform.position.y,spawn[2].transform.position.z),Quaternion.identity);
+			Instantiate (e, new Vector3(spawn[2].transform.position.x,spawn[2].transform.position.y,spawn[2].transform.position.z),spawn[2].transform.rotation);
 			print(spawn[2].name);
 		}
 	}
