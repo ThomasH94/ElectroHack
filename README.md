@@ -1,2 +1,2 @@
 # GlobalGameJam2018
-Robot Hacking Game 
+A game about hacking and defeating other robots to save the world! 
